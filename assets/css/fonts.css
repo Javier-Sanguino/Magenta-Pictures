@@ -1,0 +1,140 @@
+/* =========================
+   FONT Anton
+========================= */
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/Anton_Complete/Fonts/Anton-Regular.woff") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   FONT Clash Grotesk
+========================= */
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/ClashGrotesk_Complete/Fonts/ClashGrotesk-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/ClashGrotesk_Complete/Fonts/ClashGrotesk-Extralight.woff2")
+    format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/ClashGrotesk_Complete/Fonts/ClashGrotesk-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   FONT Melodrama
+========================= */
+@font-face {
+  font-family: "Melodrama";
+  src: url("../fonts/Melodrama_Complete/Fonts/Melodrama-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Melodrama";
+  src: url("../fonts/Melodrama_Complete/Fonts/Melodrama-Extralight.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Melodrama";
+  src: url("../fonts/Melodrama_Complete/Fonts/Melodrama-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   FONT Stardom
+========================= */
+@font-face {
+  font-family: "Stardom";
+  src: url("../fonts/Stardom_Complete/Fonts/Stardom-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   FONT Supreme
+========================= */
+@font-face {
+  font-family: "Supreme";
+  src: url("../fonts/Supreme_Complete/Fonts/Supreme-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Supreme";
+  src: url("../fonts/Supreme_Complete/Fonts/Supreme-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.test-font-container {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.test-font-Anton {
+  font-family: "Anton", monospace;
+}
+.test-font-ClashGrotesk {
+  font-family: "Clash Grotesk", monospace;
+}
+.test-font-Melodrama {
+  font-family: "Melodrama", monospace;
+}
+.test-font-Stardom {
+  font-family: "Stardom", monospace;
+}
+.test-font-Supreme {
+  font-family: "Supreme", monospace;
+}
+.Extra {
+  font-weight: 200;
+}
+.Bold {
+  font-weight: 700;
+}
+
+h1 {
+  font-family: "Melodrama", monospace;
+  font-weight: 400;
+}
+h2 {
+  font-family: "Clash Grotesk", monospace;
+  font-weight: 400;
+}
+.font-btn-display {
+  font-family: "Chakra Petch", sans-serif;
+}
+.font-btn-display a {
+  font-family: "Chakra Petch", sans-serif;
+}
