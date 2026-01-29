@@ -124,9 +124,17 @@
   font-weight: 700;
 }
 
-h1 {
+body {
+  font-family: "Clash Grotesk", monospace;
+  font-weight: 200;
+}
+.brand-title{
   font-family: "Melodrama", monospace;
   font-weight: 400;
+}
+h1 {
+  font-family: "Clash Grotesk", monospace;
+  font-weight: 700;
 }
 h2 {
   font-family: "Clash Grotesk", monospace;

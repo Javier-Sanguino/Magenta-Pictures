@@ -1,5 +1,6 @@
 :root {
   --rosa-primary: #cf0f47;
+  --rosa-primary-active: #f03d6f;
   --rosa-soft: #ffdede;
   --bg-dark: #252525;
   --bg-dark-soft: #555555;
@@ -12,20 +13,62 @@
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--bg-dark);
   color: var(--text-primary);
-  overflow-x: hidden;
 }
 
+/* --------------------------Globales------------------------------------------------ */
 .section {
   padding: 0;
-  margin: 0;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
+}
+.section-title {
+  margin: 20px 0;
+}
+.brand-title {
+  color: var(--rosa-primary);
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+}
+
+.brand-title span {
+  border-top: solid 2px var(--rosa-primary);
+  display: block;
+  text-align: center;
+  font-size: 0.4em;
+  font-weight: 400;
+  letter-spacing: 4px;
+  opacity: 0.85;
+}
+
+.section-title h1 {
+  font-size: 60px;
+  color: var(--rosa-primary);
+  text-align: center;
+}
+.btn-section {
+  background-color: transparent;
+  border: 2px solid var(--rosa-primary);
+  color: var(--rosa-primary);
+  min-width: 160px;
+  padding: 8px 24px;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.6s !important;
+}
+.btn-section:hover {
+  border: 2px solid var(--rosa-primary-active);
+  color: var(--rosa-primary-active);
 }
 
 /* ---------------------------- Hero Section -----------------------------------------*/
@@ -66,17 +109,16 @@ body {
   width: 80%;
   height: 80vh;
   display: flex;
-  justify-content: left;
+  justify-content: right;
   align-items: end;
 }
 .hero-content {
   padding: 20px 12px;
   margin-bottom: 80px;
+  text-align: right;
 }
 .hero-content h1 {
-  color: var(--rosa-primary);
-  font-size: 75px;
-  text-transform: uppercase;
+  font-size: 140px;
 }
 .hero-content h2 {
   font-size: 24px;
@@ -337,12 +379,43 @@ body {
 }
 
 /* ---------------------------- End Hero Section -----------------------------------------*/
+/* -----------------------------About us Section----------------------------------------- */
 
-/* -----------------------------ADAPTABILIDAD--------------------------------------------- */
+.about-content-container {
+  padding-bottom: 40px;
+}
+.about-image {
+  padding: 0;
+  margin: 0;
+}
+.about-image img {
+  width: 100%;
+}
+.about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.about-description h2 {
+  margin-bottom: 0;
+}
+.about-description h1 {
+  font-size: 120px;
+  margin-bottom: 20px;
+}
+.about-description p {
+  font-size: 18px;
+}
+
+/* -----------------------------End About us Section------------------------------------- */
+
+/* -----------------------------ADAPTABILIDAD------------------------------------- -------- */
 /* Tablet (≤ 992px) */
 @media (max-width: 992px) {
+  /* Section Hero */
   .hero-content h1 {
-    font-size: 60px;
+    font-size: 120px;
   }
   .hero-content h2 {
     font-size: 18px;
@@ -350,11 +423,22 @@ body {
   .btn-display a {
     font-size: 12px;
   }
+
+  /* Section About */
+  .about-description h2 {
+  }
+  .about-description h1 {
+    font-size: 80px;
+  }
+  .about-description p {
+    font-size: 16px;
+  }
 }
 /* Mobile (≤ 576px) */
 @media (max-width: 576px) {
+  /* Section Hero */
   .hero-content h1 {
-    font-size: 40px;
+    font-size: 80px;
   }
   .hero-content h2 {
     font-size: 16px;
@@ -368,5 +452,14 @@ body {
   .redes-icons a {
     color: var(--rosa-primary);
     font-size: 12px;
+  }
+
+  /* Section About */
+
+  .about-content-container {
+    padding: 40px 20px;
+  }
+  .about-description p {
+    font-size: 14px;
   }
 }
