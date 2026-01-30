@@ -1,4 +1,3 @@
-
 function updateTimecode() {
   const now = new Date();
 
@@ -20,3 +19,12 @@ updateTimecode();
 
 /* actualización cada segundo */
 setInterval(updateTimecode, 1000);
+
+const cards = document.querySelectorAll(".card-servicio");
+
+cards.forEach((card) => {
+  card.addEventListener("mouseenter", () => {
+    cards.forEach((c) => c.classList.remove("is-active"));
+    card.classList.add("is-active");
+  });
+});
