@@ -28,3 +28,11 @@ cards.forEach((card) => {
     card.classList.add("is-active");
   });
 });
+
+import { renderFooter } from "./components/footer.js";
+
+const footerContainer = document.getElementById("footer");
+
+if (footerContainer) {
+  footerContainer.innerHTML = renderFooter();
+}

@@ -26,10 +26,19 @@ body {
   padding: 0;
   position: relative;
   min-height: 100vh;
+  height: auto;
   overflow: hidden;
 }
 .section-title {
   margin: 20px 0;
+  text-align: center;
+}
+.section-title h1 {
+  font-size: 60px;
+  color: var(--rosa-primary);
+  text-align: center;
+  display: inline-block;
+  border-bottom: solid 2px var(--rosa-primary);
 }
 .brand-title {
   color: var(--rosa-primary);
@@ -48,11 +57,6 @@ body {
   opacity: 0.85;
 }
 
-.section-title h1 {
-  font-size: 60px;
-  color: var(--rosa-primary);
-  text-align: center;
-}
 .btn-section {
   background-color: transparent;
   border: 2px solid var(--rosa-primary);
@@ -127,6 +131,7 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   inset: 0;
+  z-index: 0;
 }
 
 /* ---------------Esquinas-------------------- */
@@ -441,7 +446,7 @@ body {
 }
 
 .card-servicio h3 {
-  /* white-space: nowrap; */
+  white-space: nowrap;
 }
 .btn-icon {
   position: absolute;
@@ -510,6 +515,129 @@ body {
 }
 /* -----------------------------End Servicios Section------------------------------------- */
 
+/* -----------------------------Contacto Section------------------------------------------ */
+
+.contacto-section {
+  background-image: url("../images/bg/bg-hero-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.contact-text-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+.contact-text-container .brand-title {
+  font-size: 120px;
+  margin-bottom: 40px;
+}
+.contact-text {
+  padding: 30px 0 0;
+  max-width: 600px;
+}
+.contact-form-container {
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  min-height: 100vh;
+}
+.contact-form-container h3 {
+  margin-bottom: 24px;
+  font-size: 32px;
+}
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 100%;
+  padding: 4px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--bg-dark-soft);
+  color: var(--text-secondary);
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 24px;
+  border-radius: 0;
+}
+.contact-form-container input:hover,
+.contact-form-container textarea:hover,
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+  border-bottom-color: var(--rosa-primary); /* cámbialo por tu color de marca */
+}
+.contact-form-container ::placeholder {
+  color: var(--text-muted);
+}
+.contact-form-container .btn-contacto {
+  background: var(--rosa-primary);
+  color: var(--text-primary);
+  border: none;
+  padding: 12px 0;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+.btn-contacto:hover {
+  background: var(--rosa-primary-active);
+}
+/* -----------------------------End Contacto Section-------------------------------------- */
+
+/* -------------------------------Footer----------------------------------------------------- */
+.site-footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 4rem 0 2rem;
+}
+
+.site-footer h3 span {
+  color: #e63946;
+}
+
+.site-footer h4 {
+  margin-bottom: 1rem;
+}
+
+.site-footer p {
+  max-width: 35ch;
+}
+
+.footer-links ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a,
+.footer-social a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+/* -------------------------------End Footer----------------------------------------------------- */
+
 /* -----------------------------ADAPTABILIDAD------------------------------------- -------- */
 /* Tablet (≤ 992px) */
 @media (max-width: 992px) {
@@ -525,8 +653,7 @@ body {
   }
 
   /* Section About */
-  .about-description h2 {
-  }
+
   .about-description h1 {
     font-size: 80px;
   }
@@ -541,7 +668,7 @@ body {
     overflow-y: hidden;
     flex-wrap: nowrap;
     padding-inline: 12px;
-    /* scroll-snap-type: x mandatory; */
+    scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
   .service-card-container::before,
